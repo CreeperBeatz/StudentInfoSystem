@@ -5,8 +5,44 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:StudentInfoSystem"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="Дуумъл" Height="450" Width="800">
+    <Grid x:Name="main_grid">
+        <Grid x:Name="personal_information" Margin="10,10,534,293" RenderTransformOrigin="0.5,0.5">
+            <Grid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.003"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Grid.RenderTransform>
+            <Label Content="Лични данни:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="86"/>
+            <Label Content="Презиме:" HorizontalAlignment="Left" Margin="10,57,0,0" VerticalAlignment="Top"/>
+            <Label Content="Име:" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Width="59"/>
+            <Label Content="Фамилия:" HorizontalAlignment="Left" Margin="9,83,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="middle_name_box" HorizontalAlignment="Left" Margin="101,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="name_box" HorizontalAlignment="Left" Margin="101,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="surname_box" HorizontalAlignment="Left" Margin="101,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        </Grid>
+        <Grid x:Name="student_information" Margin="10,176,351,10">
+            <Label Content="Студентска информация" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="147"/>
+            <Label Content="Факултет:" HorizontalAlignment="Left" Margin="10,48,0,0" VerticalAlignment="Top" Width="85"/>
+            <TextBox x:Name="faculty_box" HorizontalAlignment="Left" Margin="100,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <Label Content="Специалност:" HorizontalAlignment="Left" Margin="10,75,0,0" VerticalAlignment="Top" Width="85"/>
+            <TextBox x:Name="specialty_box" HorizontalAlignment="Left" Margin="100,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <Label Content="ОКС:" HorizontalAlignment="Left" Margin="10,102,0,0" VerticalAlignment="Top" Width="85"/>
+            <TextBox x:Name="oks_box" HorizontalAlignment="Left" Margin="100,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <Label Content="Статус:" HorizontalAlignment="Left" Margin="10,129,0,0" VerticalAlignment="Top" Width="85"/>
+            <TextBox x:Name="status_box" HorizontalAlignment="Left" Margin="100,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <Label Content="Фак. номер" HorizontalAlignment="Left" Margin="10,156,0,0" VerticalAlignment="Top" Width="85"/>
+            <TextBox x:Name="faculty_num_box" HorizontalAlignment="Left" Margin="100,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <Label Content="Курс:" HorizontalAlignment="Left" Margin="230,48,0,0" VerticalAlignment="Top" Width="51"/>
+            <TextBox x:Name="course_box" HorizontalAlignment="Left" Margin="281,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <Label Content="Поток:" HorizontalAlignment="Left" Margin="230,75,0,0" VerticalAlignment="Top" Width="51"/>
+            <TextBox x:Name="stream_box" HorizontalAlignment="Left" Margin="281,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <Label Content="Група" HorizontalAlignment="Left" Margin="230,102,0,0" VerticalAlignment="Top" Width="51"/>
+            <TextBox x:Name="group_box" HorizontalAlignment="Left" Margin="281,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        </Grid>
+
     </Grid>
 </Window>

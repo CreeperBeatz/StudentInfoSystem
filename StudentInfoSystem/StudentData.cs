@@ -17,7 +17,7 @@ namespace StudentInfoSystem
             if (_students == null)
             {
                 _students = new List<Student>();
-                _students.Add(new Student("Dani", "Ivov", "Matev", "FKST", "KSI", "Highschool", "121219107", 32, 1, 29));
+                _students.Add(new Student("Dani", "Ivov", "Matev", "FKST", "KSI", "Highschool", "121219107", 32, 1, 29, "Active"));
             }
         }
 

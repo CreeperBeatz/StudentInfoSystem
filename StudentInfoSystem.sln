@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentInfoSystem", "StudentInfoSystem\StudentInfoSystem.csproj", "{799E0C57-1D6B-46D5-8ADF-E37659511F4C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserLogin", "..\PS-project\UserLogin\UserLogin.csproj", "{602D91D3-E54F-4A82-950B-9CB853A006FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{799E0C57-1D6B-46D5-8ADF-E37659511F4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{799E0C57-1D6B-46D5-8ADF-E37659511F4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{799E0C57-1D6B-46D5-8ADF-E37659511F4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{602D91D3-E54F-4A82-950B-9CB853A006FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{602D91D3-E54F-4A82-950B-9CB853A006FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{602D91D3-E54F-4A82-950B-9CB853A006FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{602D91D3-E54F-4A82-950B-9CB853A006FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

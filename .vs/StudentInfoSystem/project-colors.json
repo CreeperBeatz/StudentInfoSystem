@@ -5,7 +5,12 @@
       "ProjectGuid": "799e0c57-1d6b-46d5-8adf-e37659511f4c",
       "DisplayName": "StudentInfoSystem",
       "ColorIndex": 0
+    },
+    "602d91d3-e54f-4a82-950b-9cb853a006fe": {
+      "ProjectGuid": "602d91d3-e54f-4a82-950b-9cb853a006fe",
+      "DisplayName": "UserLogin",
+      "ColorIndex": 1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 2
 }
