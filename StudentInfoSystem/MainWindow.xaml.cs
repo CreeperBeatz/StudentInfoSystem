@@ -24,17 +24,27 @@ namespace StudentInfoSystem
         public MainWindow()
         {
             InitializeComponent();
+            ExitTestMode();
         }
 
         private void DeleteAllFields()
         {
-            foreach(var field in main_grid.Children)
+            foreach(var field in personal_information.Children)
             {
                 if (field is TextBox)
                 {
                     ((TextBox)field).Text = String.Empty;
                 }
             }
+
+            foreach (var field in student_information.Children)
+            {
+                if (field is TextBox)
+                {
+                    ((TextBox)field).Text = String.Empty;
+                }
+            }
+
         }
 
         private void SetInfo(Student student)
@@ -54,25 +64,73 @@ namespace StudentInfoSystem
 
         }
 
-        private void DisableControls()
-        {
-            ChangeControls(false);
-        }
-
-        private void EnableControls()
-        {
-            ChangeControls(true);
-        }
-
         private void ChangeControls(bool status)
         {
-            foreach (var field in main_grid.Children)
+            foreach (var field in personal_information.Children)
             {
                 if (field is TextBox)
                 {
                     ((TextBox)field).IsEnabled = status;
                 }
             }
+
+            foreach (var field in student_information.Children)
+            {
+                if (field is TextBox)
+                {
+                    ((TextBox)field).IsEnabled = status;
+                }
+            }
+        }
+
+        private void EnterTestMode()
+        {
+            enter_test_mode_button.Visibility = Visibility.Hidden;
+            exit_test_mode_button.Visibility = Visibility.Visible;
+            show_user_button.Visibility = Visibility.Visible;
+            clear_data_button.Visibility = Visibility.Visible;
+            disable_controls_button.Visibility = Visibility.Visible;
+            enable_controls_button.Visibility= Visibility.Visible;
+        }
+
+        private void ExitTestMode()
+        {
+            enter_test_mode_button.Visibility = Visibility.Visible;
+            exit_test_mode_button.Visibility = Visibility.Hidden;
+            show_user_button.Visibility = Visibility.Hidden;
+            clear_data_button.Visibility = Visibility.Hidden;
+            disable_controls_button.Visibility = Visibility.Hidden;
+            enable_controls_button.Visibility = Visibility.Hidden;
+        }
+
+        private void enter_test_mode_button_Click(object sender, RoutedEventArgs e)
+        {
+            EnterTestMode();
+        }
+
+        private void exit_test_mode_button_Click(object sender, RoutedEventArgs e)
+        {
+            ExitTestMode();
+        }
+
+        private void show_user_button_Click(object sender, RoutedEventArgs e)
+        {
+            SetInfo(StudentData.TestStudents[0]); //get first user from test students
+        }
+
+        private void clear_data_button_Click(object sender, RoutedEventArgs e)
+        {
+            DeleteAllFields();
+        }
+
+        private void disable_controls_button_Click(object sender, RoutedEventArgs e)
+        {
+            ChangeControls(false);
+        }
+
+        private void enable_controls_button_Click(object sender, RoutedEventArgs e)
+        {
+            ChangeControls(true);
         }
     }
 }
