@@ -23,8 +23,20 @@ namespace StudentInfoSystem
     {
         public MainWindow()
         {
+
             InitializeComponent();
             ExitTestMode();
+        }
+        public MainWindow(Student student)
+        {
+            InitializeComponent();
+            ExitTestMode();
+            enter_test_mode_button.Visibility = Visibility.Hidden;
+            if (student != null)
+            {
+                SetInfo(student);
+            }
+            ChangeControls(false);
         }
 
         private void DeleteAllFields()

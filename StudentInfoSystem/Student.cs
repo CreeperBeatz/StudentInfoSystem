@@ -7,7 +7,7 @@ using UserLogin;
 
 namespace StudentInfoSystem
 {
-    internal class Student
+    public class Student
     {
         public string name { get; set; }
         public string middle_name { get; set; }

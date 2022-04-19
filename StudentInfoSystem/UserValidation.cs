@@ -7,9 +7,9 @@ using UserLogin;
 
 namespace StudentInfoSystem
 {
-    internal class UserValidation
+    public static class UserValidation
     {
-        public Student GetStudentDataByUser(User user)
+        public static Student GetStudentDataByUser(User user)
         {
             if (user.faculty_num == null) { return null; }
 

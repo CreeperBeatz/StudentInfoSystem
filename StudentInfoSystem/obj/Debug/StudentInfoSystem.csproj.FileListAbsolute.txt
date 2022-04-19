@@ -18,3 +18,6 @@ C:\Users\danim\source\repos\StudentInfoSystem\StudentInfoSystem\obj\Debug\Studen
 C:\Users\danim\source\repos\StudentInfoSystem\StudentInfoSystem\obj\Debug\StudentInfoSystem.csproj.CopyComplete
 C:\Users\danim\source\repos\StudentInfoSystem\StudentInfoSystem\obj\Debug\StudentInfoSystem.exe
 C:\Users\danim\source\repos\StudentInfoSystem\StudentInfoSystem\obj\Debug\StudentInfoSystem.pdb
+C:\Users\danim\source\repos\StudentInfoSystem\StudentInfoSystem\obj\Debug\login.g.cs
+C:\Users\danim\source\repos\StudentInfoSystem\StudentInfoSystem\obj\Debug\login.baml
+C:\Users\danim\source\repos\StudentInfoSystem\StudentInfoSystem\obj\Debug\GeneratedInternalTypeHelper.g.cs

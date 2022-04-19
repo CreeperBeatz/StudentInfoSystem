@@ -7,7 +7,7 @@ using UserLogin;
 
 namespace StudentInfoSystem
 {
-    internal static class StudentData
+    public static class StudentData
     {
         public static List<Student> TestStudents { get { ResetStudents(); return _students; } set { } }
         private static List<Student> _students;
